@@ -1,0 +1,107 @@
+/* Estilos globales para un CV profesional y responsive */
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background: #f4f6fa;
+  color: #222;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 32px auto 0 auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+  padding: 32px 20px 24px 20px;
+}
+
+@media (max-width: 600px) {
+  .cv-container {
+    padding: 16px 4px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.cv-header {
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 32px;
+}
+.cv-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+.cv-header .subtitle {
+  color: #3b82f6;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.cv-header .info {
+  color: #555;
+  font-size: 0.98rem;
+  margin-bottom: 8px;
+}
+.cv-header .links a {
+  color: #2563eb;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+}
+.cv-header .links a:hover {
+  text-decoration: underline;
+}
+
+.cv-section {
+  margin-bottom: 28px;
+}
+.cv-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e293b;
+  border-bottom: 1.5px solid #e5e7eb;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+.cv-section ul, .cv-section p, .cv-section div {
+  margin: 0 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cv-section ul li {
+  margin-bottom: 8px;
+  padding-left: 16px;
+  position: relative;
+}
+.cv-section ul li:before {
+  content: '•';
+  color: #3b82f6;
+  position: absolute;
+  left: 0;
+}
+.cv-proyectos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.cv-proyecto-card {
+  background: #f8fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+  padding: 16px 14px;
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.cv-footer {
+  text-align: center;
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  padding-bottom: 12px;
+}
